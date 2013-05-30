@@ -9,11 +9,8 @@
 
 	<!-- Le styles -->
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<style type="text/css">
-		body { padding-top: 60px; padding-bottom: 40px; }
-	</style>
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-
+	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,7 +33,15 @@
 				</a>
 				<a class="brand" href="#">Project name</a>
 				<div class="nav-collapse">
-					<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+					<p class="navbar-text pull-right">
+						<a href="#myModal" role="button" data-toggle="modal" title="Login de usuario" alt="Login de usuario">
+							<i class="icon-user"></i>
+						</a>
+					</p>
+					<form class="form-search pull-right">
+						<input type="text" class="">
+						<a href="#"><i class="icon-search"></i></a>
+					</form>
 				</div><!--/.nav-collapse -->
 			</div>
 		</div>
@@ -44,68 +49,108 @@
 
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div class="span3">
+			<div class="span2">
 				<div class="well sidebar-nav">
 					<ul class="nav nav-list">
-						<li class="nav-header">Sidebar</li>
+						<li class="nav-header">
+							<h6><i class="icon-th"></i>Categorías</h6>
+						</li>
 						<li class="active"><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li class="nav-header">Sidebar</li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li class="nav-header">Sidebar</li>
 						<li><a href="#">Link</a></li>
 						<li><a href="#">Link</a></li>
 						<li><a href="#">Link</a></li>
 					</ul>
 				</div><!--/.well -->
 			</div><!--/span-->
-			<div class="span9">
-				<div class="hero-unit">
+			<div class="span10">
+				<!--<div class="hero-unit">
 					<h1>Hello, world!</h1>
 					<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 					<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-			  	</div>
+			  	</div>-->
+			  	<!-- Carousel
+			    ================================================== -->
+			    <div id="myCarousel" class="carousel slide">
+			      <div class="carousel-inner">
+			        <div class="item active">
+			          <img src="img/watermark.jpg" alt="">
+			          <div class="container">
+			            <div class="carousel-caption">
+			              <h1>Example headline.</h1>
+			              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="item">
+			          <img src="img/watermark.jpg" alt="">
+			          <div class="container">
+			            <div class="carousel-caption">
+			              <h1>Another example headline.</h1>
+			              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="item">
+			          <img src="img/watermark.jpg" alt="">
+			          <div class="container">
+			            <div class="carousel-caption">
+			              <h1>One more for good measure.</h1>
+			              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			    </div><!-- /.carousel -->
+
 				<div class="row-fluid">
-					<div class="span4">
+					<div class="span3">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 						<p><a class="btn" href="#">View details &raquo;</a></p>
 					</div><!--/span-->
-					<div class="span4">
+					<div class="span3">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 						<p><a class="btn" href="#">View details &raquo;</a></p>
 					</div><!--/span-->
-					<div class="span4">
+					<div class="span3">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 						<p><a class="btn" href="#">View details &raquo;</a></p>
 					</div><!--/span-->
-					</div><!--/row-->
-					<div class="row-fluid">
-					<div class="span4">
+					<div class="span3">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 						<p><a class="btn" href="#">View details &raquo;</a></p>
 					</div><!--/span-->
-					<div class="span4">
+				</div><!--/row-->
+				<div class="row-fluid">
+					<div class="span3">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 						<p><a class="btn" href="#">View details &raquo;</a></p>
 					</div><!--/span-->
-					<div class="span4">
+					<div class="span3">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 						<p><a class="btn" href="#">View details &raquo;</a></p>
 					</div><!--/span-->
-			  </div><!--/row-->
+					<div class="span3">
+						<h2>Heading</h2>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+						<p><a class="btn" href="#">View details &raquo;</a></p>
+					</div><!--/span-->
+					<div class="span3">
+						<h2>Heading</h2>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+						<p><a class="btn" href="#">View details &raquo;</a></p>
+					</div><!--/span-->
+			  	</div><!--/row-->
 			</div><!--/span-->
 		</div><!--/row-->
 	  	<hr>
@@ -113,6 +158,38 @@
 			<p>&copy; Company 2012</p>
 		</footer>
 	</div><!--/.fluid-container-->
+
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Login</h3>
+		</div>
+		<div class="modal-body">
+			<form class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label" for="inputEmail">Email</label>
+					<div class="controls">
+						<input type="text" id="inputEmail" placeholder="Email">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">Password</label>
+					<div class="controls">
+						<input type="password" id="inputPassword" placeholder="Password">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<label class="checkbox">
+							<input type="checkbox"> Remember me
+						</label>
+						<button type="submit" class="btn">Sign in</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
 	<!-- Le javascript
 	================================================== -->
@@ -130,5 +207,13 @@
 	<script src="js/bootstrap-collapse.js"></script>
 	<script src="js/bootstrap-carousel.js"></script>
 	<script src="js/bootstrap-typeahead.js"></script>
+	<script>
+	!function ($) {
+		$(function(){
+			// carousel demo
+			$('#myCarousel').carousel()
+		})
+	}(window.jQuery)
+    </script>
 </body>
 </html>
